@@ -51,7 +51,7 @@ count(val: any, recursive: boolean = false): number
 
 ```
 // esm
-import count from '../src/count.mjs';
+import count from '@cwola/count';
 import assert from 'assert';
 
 assert.equal(0, count(null));
