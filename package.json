@@ -1,6 +1,6 @@
 {
   "name": "@cwola/count",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Count value(number, string, array, object...).",
   "main": "src/count",
   "type": "module",
