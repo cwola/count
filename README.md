@@ -70,6 +70,14 @@ assert.equal(1, count(false));
 assert.equal(1, count(() => {}));
 assert.equal(8, count(new Uint8Array(8)));
 
+// countable
+class Countable {
+    count() {
+        return 5;
+    }
+}
+assert.equal(5, count(new Countable));
+
 // array
 let o = [1, 2, 3];
 assert.equal(3, count(o));
@@ -81,14 +89,6 @@ assert.equal(7, count(o));
 // object
 o = {a:1, b:2, c:3};
 assert.equal(3, count(o));
-
-// countable
-class Countable {
-    count() {
-        return 5;
-    }
-}
-assert.equal(5, count(new Countable));
 
 
 // recursive
